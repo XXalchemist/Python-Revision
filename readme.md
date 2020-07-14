@@ -23,7 +23,7 @@
 |17.| Enumerate |
 |18.| Formatting of string |
 
-### 1. Python Data Types
+### 1. Data Types
 
 _Everything in Python is an Object_
 
@@ -54,3 +54,9 @@ print(type(5))
 
 # int('A') will not be typecasted
 ```
+### 2. Expression and Variables
+
+**Expression: Statement consists of operators and operands to perform certain operation.**<br>
+
+**Variables: Used to store data in programming language.**
+
