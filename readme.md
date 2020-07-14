@@ -104,6 +104,7 @@ _There are three types of loop in python._<br>
 
 ### 5. Conditional Statements
 
+**Relational Operators  : >=, <=, ==, ===, !=; Logical Operators: AND, OR, NOT; Arithmetic Operators: +, - ,/, %, //**
 ```python
 if (condition 1):
     block of statements
@@ -112,4 +113,14 @@ elif (condition 2):
 else:
     block of statements
 ```
-### 
+### 6. Functions and Scope
+
+**Function: Block of statement that have to execute agian and again.**
+_Syntax :-_
+```python
+def function_name(parameters):
+    block of statements
+    return value
+```
+**Scope: Variables that is used in particular block of statements.**
+_if variable is not declared in function then it store the global value of that variable._

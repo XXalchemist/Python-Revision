@@ -84,3 +84,17 @@ if (a > 5):
     print(True)
 else:
     print(False)
+
+# Functions
+
+def print_bye(name):
+    print(name,' bye - bye !')
+
+print_bye('Krishna')
+
+# Scope 
+def add_1(y):
+    x=x+1
+    print(x)
+x=2
+z = add_1(x)
