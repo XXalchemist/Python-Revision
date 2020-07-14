@@ -60,3 +60,15 @@ print(type(5))
 
 **Variables: Used to store data in programming language.**
 
+### 3. String, List, Tuple, Dictionary, Set
+
+**String : Sequence of characters that is denoted under "" or ''. Example: "Name". Immutable(can't change the value of string but can overwrite it) , Ordered Sequence. Stride => [start:stop:jump]**<br>
+
+_Some Examples of String Methods are :-_
+
+1. .upper( ) : Convert to uppercase.
+2. .replace('old_subset','new_subset') : replace the subset of string.
+3. .find('subset') : returns -1 if not present.
+
+
+

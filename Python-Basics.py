@@ -30,3 +30,17 @@ answer: variable
 =, +, //, - : Operators
 43, 31, 2, 1 : Operands 
 '''
+
+# Strings
+
+alpha = 'abcd'
+#alpha[0] ='b' # will not work
+alpha = alpha + 'e' # will work
+print(alpha)
+alpha.replace('d','k')
+
+# Escape Sequence is denoted by \.
+print("\nFind 'a': ",alpha.find('a'))
+print("\nFind 'ab': ",alpha.find('ab'))
+print("\nUppercase: ",alpha.upper())
+print("\nReplace: ",alpha)
