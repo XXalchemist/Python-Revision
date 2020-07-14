@@ -95,10 +95,21 @@ _del object name can delete any object in python._
  
 _name in dictionary name will lookup for name in keys_
 
-### Loops
+### 4. Loops
 
 _There are three types of loop in python._<br>
 
 1. For
 2. While
 
+### 5. Conditional Statements
+
+```python
+if (condition 1):
+    block of statements
+elif (condition 2):
+    block of statements
+else:
+    block of statements
+```
+### 

@@ -72,8 +72,15 @@ for i in range(1,10):
 print("\n")
 
 # While Loop
+i = 0
 while(i<=10):
-    print(i,end='-')
+    print(i,end='- ')
+    i += 1
 print('\n')
 
-
+# Conditional Statements
+a = 7
+if (a > 5):
+    print(True)
+else:
+    print(False)
