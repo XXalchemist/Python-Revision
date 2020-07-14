@@ -62,3 +62,18 @@ tuple_1 = (1,2,3)
 dict_1 = {'a':1,'b':2}
 for value,key in dict_1.items():
     print('Key: ',key,'-> value: ',value)
+
+print('\n')
+# Loops
+
+# For Loop
+for i in range(1,10):
+    print(i,end='- ')
+print("\n")
+
+# While Loop
+while(i<=10):
+    print(i,end='-')
+print('\n')
+
+

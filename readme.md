@@ -95,4 +95,10 @@ _del object name can delete any object in python._
  
 _name in dictionary name will lookup for name in keys_
 
+### Loops
+
+_There are three types of loop in python._<br>
+
+1. For
+2. While
 
