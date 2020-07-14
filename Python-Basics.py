@@ -97,4 +97,4 @@ def add_1(y):
     x=x+1
     print(x)
 x=2
-z = add_1(x)
+# z = add_1(x) //returns error
