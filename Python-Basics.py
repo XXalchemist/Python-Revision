@@ -44,3 +44,21 @@ print("\nFind 'a': ",alpha.find('a'))
 print("\nFind 'ab': ",alpha.find('ab'))
 print("\nUppercase: ",alpha.upper())
 print("\nReplace: ",alpha)
+
+# Lists
+
+list_1 = [1,3,2,'ab',4]
+list_1.extend([2,3,1,4,5])
+print(list_1)
+del(list_1[0])
+print(list_1,"\n")
+
+# Tuples
+
+tuple_1 = (1,2,3)
+
+# Dictionary
+
+dict_1 = {'a':1,'b':2}
+for value,key in dict_1.items():
+    print('Key: ',key,'-> value: ',value)

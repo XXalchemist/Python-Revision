@@ -62,7 +62,7 @@ print(type(5))
 
 ### 3. String, List, Tuple, Dictionary, Set
 
-**String : Sequence of characters that is denoted under "" or ''. Example: "Name". Immutable(can't change the value of string but can overwrite it) , Ordered Sequence. Stride => [start:stop:jump]**<br>
+**String: Sequence of characters that is denoted under "" or ''. Example: "Name". Immutable(can't change the value of string but can overwrite it) , Ordered Sequence. Stride => [start:stop:jump]**<br>
 
 _Some Examples of String Methods are :-_
 
@@ -70,5 +70,29 @@ _Some Examples of String Methods are :-_
 2. .replace('old_subset','new_subset') : replace the subset of string.
 3. .find('subset') : returns -1 if not present.
 
+**List: Iterable object, ordered sequence, mutable object and denoted by [ ].Example: [1,3,4,2].**<br>
+
+_Some Examples of List methods are :-_
+
+1. .extend( )
+2. .sort()
+3. .split("delimiter")
+
+_del object name can delete any object in python._
+
+**Tuple: Immutable, ordered object and denoted by ( ). Example: (1,2,3).**<br>
+**Set: Unordered object, contains unique value and is represented by { }. Example: {1,2,3}.**<br>
+
+1. .add('')
+2. .remove('')
+3. .union(set_name)
+
+**Dictionary: Contains keys and values, acts as hash map, keys have to be immutable and unique and values can be mutable. Example: {'a':1,'b':2}**<br>
+
+1. .keys()
+2. .values()
+3. .items()
+ 
+_name in dictionary name will lookup for name in keys_
 
 
