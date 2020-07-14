@@ -23,3 +23,34 @@
 |17.| Enumerate |
 |18.| Formatting of string |
 
+### 1. Python Data Types
+
+_Everything in Python is an Object_
+
+**Data Types :-**<br>
+*int* : Integer Number ; 
+*float* : Decimal Number ;
+*str* : String (Collection of characters) ;
+*bool* : True or False value <br>
+
+_Typecasting is supported in python. Example: int(2.1) = 2._
+
+```Python
+boolean = True
+Integer = 2
+Float = 2.0
+String = 'This is String'
+
+print(boolean, Integer, Float, String ) 
+
+# Typecasting
+
+print('Float To Integer :' ,int(2.1))
+print('Float to Integer: ',float(2))
+
+# type() is used to print the class/data-type of variable
+
+print(type(5))
+
+# int('A') will not be typecasted
+```
