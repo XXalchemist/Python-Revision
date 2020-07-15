@@ -166,3 +166,19 @@ class Box:
 
 box_1 = Box('square')
 print("\nExample of static method in class:-\n",'Is Shipped on Sunday:',box_1.is_shipped_on('sun'))
+
+# Inheritance in Python Class
+
+class Programmer(Employee):
+    def __init__(self,fname,lname,sal,prolang,exp):
+        super().__init__(fname,lname,sal)
+        self.prolang = prolang
+        self.exp = exp
+    
+    def increase(self): # Method overwriting
+        self.salary = int(self.salary * (self.increment+0.2))
+
+Emp_3 = Programmer('Fullmetal','Alchemist',45000,'Python','0yrs')    
+print('\nExample Of Inheritance:-\n','Emp_3 salary: ',Emp_3.salary)
+Emp_3.increase()
+print('\nNew salary: ',Emp_3.salary)
