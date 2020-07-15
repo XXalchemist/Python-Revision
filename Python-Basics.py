@@ -256,3 +256,22 @@ print(next(obj_1))
 print('\nFor Loop:-')
 for i in range(10):
     print(i,end=',')
+
+print('\nComprehsions Examples :- ')
+# List, Set, Dictionary and Generator Comprehension
+list_1 = [1,2,3,4,5,6,7,8,9]
+print('List Example:-\n',[ item for item in list_1 if item % 2 == 0])
+
+# Dictionary
+keys = ['a','b', 'c']
+values = ['1','2','3']
+print('Dictionary Example:-\n',{i:j for (i,j) in zip(keys,values)})
+# Set
+squared = { x**2 for x in list_1 }
+print('Set Example:-\n',squared)
+
+# Generator
+print('Generator Example:-\n')
+gen = (i for i in range(56) if i% 3 == 0)
+for item in gen:
+    print(item, end =' ')

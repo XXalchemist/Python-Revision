@@ -298,3 +298,31 @@ obj_1.next() # To yield next item of generator object
 
 
 ```
+
+### 13. List, Set, Dictionary and Generator Comprehension
+
+**List Comprehension**
+```Python
+list_object = [ ]
+[function for parameters in list_object if condition] 
+```
+
+**Dictionary Comprehension**
+```Python
+dict_1 = { }
+{function for parameters in list_object if condition}
+```
+
+**Set Comprehension**
+```Python
+set_1 = set()
+{function for parameters in list_object if condition} 
+```
+
+**Generator Comprehension**
+```Python
+gen = (function for parameters in list_object if condition)
+for item in gen:
+    print(item)
+    
+```
