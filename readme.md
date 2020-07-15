@@ -198,3 +198,41 @@ def main():
 
 ***args**: To take number of variables as an argument. Multiple one value pass. `type(*args) = tuple`<br>
 ****kwargs**: To take two values each time. Multiple Two Value pass. `type(**kwargs) = dictionary`<br>
+
+>We can change names of args and kwargs but not notation.
+
+### 10. Exception Handling
+
+**Exception: only interrupts certain part of program.**
+**Error: interrupts whole executable program.**<br>
+`try, except is used to handle exceptions in python.`<br>
+
+>Syntax :-
+
+```python
+
+# Exception handling for multiple exceptions
+
+try:
+    error statement
+except error_name as e:
+    block of statements
+except error_name as e:
+    block of statements
+.
+.
+.
+finally: # This will run every time
+    block of statements
+
+# Exception handling with else
+
+try:
+    statement
+except Exception as e:
+    print(e)
+else:
+    print("if except block doesn't execute")
+finally:
+    print('This will always execute')
+```

@@ -222,3 +222,23 @@ def function_2(**kwargs):
 marksheet = {'Rohan': 92, 'Mohan': 85}
 print('\nExample of kwargs: ',"Marks of: ")
 function_2(**marksheet)
+
+# Exception Handling
+
+# Exception - only interrupts certain part of program. Error - interrupt whole program.
+
+try:
+    open('a.txt')
+except Exception as e:
+    print("\nError : ",e)
+
+# Handling Multiple exceptions
+
+try:
+    file = open('a.txt','r')
+except EOFError as e:
+    print(e)
+except IOError as e:
+    print('This is I/O Error')
+finally:
+    print('This will always run')
