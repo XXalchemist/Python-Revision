@@ -208,4 +208,17 @@ Emp_5 = Employee_3('Gordon','Freeman',1000000)
 
 print('\nExample of Dunder Methods:-\n','Emp_4 + Emp_5: ',Emp_4 + Emp_5,"--- repr(Emp_4): ",repr(Emp_4))
 
+# *args and **kwargs
 
+def function_1(*args):
+    return 'The names are {}, {} and {}'.format(args[0],args[1],args[2])
+
+print('\nExample of args: ',function_1('Prince',"Babbage","Charly"))
+
+def function_2(**kwargs):
+    for key, value in kwargs.items():
+        print(key,' -> ',value)
+
+marksheet = {'Rohan': 92, 'Mohan': 85}
+print('\nExample of kwargs: ',"Marks of: ")
+function_2(**marksheet)

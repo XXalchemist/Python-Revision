@@ -193,3 +193,8 @@ if __name__ == '__main__':
 def main():
     block of statements    
 ```
+
+### 9. *args and **kwargs
+
+***args**: To take number of variables as an argument. Multiple one value pass. `type(*args) = tuple`<br>
+****kwargs**: To take two values each time. Multiple Two Value pass. `type(**kwargs) = dictionary`<br>
