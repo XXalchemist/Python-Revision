@@ -1,6 +1,8 @@
 '''
 Basics of python Executable code 
 '''
+from functools import reduce
+
 boolean = True
 Integer = 2
 Float = 2.0
@@ -275,3 +277,34 @@ print('Generator Example:-\n')
 gen = (i for i in range(56) if i% 3 == 0)
 for item in gen:
     print(item, end =' ')
+
+# Map
+
+h1 = [1,2,3,4,5]
+def square(n):
+    return n*n
+
+sq = list(map(square, h1))
+print('\nExample Of Mapping: ',sq)
+
+# Filter
+
+def greater_than_2(num):
+    if num > 2:
+        return True
+    else:
+        return False
+greater_than_2v = filter(greater_than_2, h1)
+print('\nExample Of Filter: ',list(greater_than_2v))
+
+# Reduce
+
+def mul_num (a,b):
+    return a*b
+
+mul_list = reduce(mul_num, h1)
+
+# Join
+
+list_of = [ 'chalk', 'pen', 'paper']
+print('\nExample of Join: ',' and '.join(list_of))

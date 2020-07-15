@@ -16,8 +16,8 @@
 |10.| Try, Except, Else and Finally (Exception handling)|
 |11.| Virtual Enviroment |
 |12.| Iterators, Iterables and Generators |
-|13.| Map, Reduce, Filter and Join |
-|14.| List, Set, Generator and Dictionary Comprehension |
+|13.| List, Set, Generator and Dictionary Comprehension |
+|14.| Map, Reduce, Filter and Join |
 |15.| Bisect Module |
 |16.| Lambda Function |
 |17.| Enumerate |
@@ -324,5 +324,13 @@ set_1 = set()
 gen = (function for parameters in list_object if condition)
 for item in gen:
     print(item)
-    
+
 ```
+
+### 14. Map, Filter, Reduce and join in Python
+
+- **Map:** return map object , map each element of sequence to the given function._Syntax:_ *map  (function_to_apply, list_of_inputs)*
+- **Reduce:** return list object, reduce the number of elements in sequence by applying function to each element of the sequence._Syntax:_ *First import : from functools import reduce then reduce(function_name, list)*
+- **Filter:** return filter object, contains elements if the condition is true. We have to typecast the result._Syntax:_ *filter(function_name, list_of_inputs)*
+- **Join:** Join each elements in list with some symbol._Syntax:_ *'symbol'.join(list_of_inputs)*
+  
