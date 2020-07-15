@@ -329,3 +329,12 @@ rand_alpha = ['ab','cd','ed']
 
 for i,item in enumerate(rand_alpha):
     print(i,' -> ',item)
+
+# Formatting in Python
+print('\nFormatting of string :-')
+name = 'Algorithm To Live By'
+categ = 'non-fiction'
+template = 'This is {} book and category of this book is {}'.format(name,categ)
+print(template)
+template = 'This is {1} book and category of this book is {0}'.format(name,categ)
+print(template)

@@ -138,7 +138,7 @@ _Every object has_ :-
 _A class or types **Methods** are function that every instance of that class or type provides.
 
 >Syntax :-
-
+`class_name__dict__ is used to show all the variables and methods in class_name class.`
 ```python
 
 class ClassName: # Parent classes can be multiple or none according to the need.
@@ -366,3 +366,13 @@ for i,item in enumerate(list_1):
     print(i,'->',item) 
 ```
 
+### 18. Formatting of string in Python
+
+**used to format the template for string in python.**
+_Example :-_
+```python
+name = 'Algorithm To Live By'
+categ = 'non-fiction'
+template = 'This is {} book and category of this book is {}'.format(name,categ)
+template = 'This is {1} book and category of this book is {0}'.format(name,categ)
+```
