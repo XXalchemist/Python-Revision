@@ -10,7 +10,7 @@
 |4. | Loops |
 |5. | Conditional Statements |
 |6. | Functions and scope |
-|7. | Objects and Classes |
+|7. | Objects and Classes and Dunder Methods|
 |8. | ```__name__ == __main__``` |
 |9. | ``` *args and **kwargs ```|
 |10.| Try, Except, Else and Finally (Exception handling)|
@@ -22,6 +22,7 @@
 |16.| Lambda Function |
 |17.| Enumerate |
 |18.| Formatting of string |
+|19.| ! Property, Decorators, Settters and Getters |
 
 ### 1. Data Types
 
@@ -126,3 +127,58 @@ def function_name(parameters):
 _if variable is not declared in function then it store the global value of that variable._
 
 ### 7. Objects and Classes
+
+**Class**: Blueprint of Object, and **Object**: Instance of Class.
+
+_Every object has_ :-
+1. a **type**.
+2. an internal data representation **Blueprint**.
+3. set of procedures for interacting with objects **Methods**.
+   
+_A class or types **Methods** are function that every instance of that class or type provides.
+
+>Syntax :-
+
+```python
+
+class ClassName: # Parent classes can be multiple or none according to the need.
+    
+    # Class variable - variable that is used by only this class.
+    variable_name = value
+
+    # Constructor
+    def __init__(self, instanceVariables):
+        self.instanceVariable = instanceVariable
+
+    # Class Methods - method used by class only.
+    @classmethod
+    def class_method_name(cls, value): # used to change value of class variable
+        cls.variable_name = value
+
+    # Static methods - when there is no use of class or instance method
+    @staticmethod
+    def static_method_name(parameters):
+        block of statements
+  
+# Inheritance 
+
+class ClassName(ParentClass):
+    
+    def __init__(self,parameters_1, parameters_2):
+        # if parameters_1 is present in parent class then we can inherit that class.
+        super().__init__(parameters_1):
+            self.parameters_2 = parameters_2
+    
+    # Same methods name can be used to overwrite methods of parent class. First class searches method in present class and after that it searches methods in parent class.
+
+
+# Magic / Dunder Methods : used for method override and represented "__methodname__".
+
+__add__ : To override addition. Example: (A + B)
+__repr__: To cahnge representation of object. Example: repr(object_name) 
+__str__: To overwrite repr() method. Example: str(object_name)
+
+
+
+
+```
