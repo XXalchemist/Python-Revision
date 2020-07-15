@@ -148,3 +148,21 @@ class Employee_2:
 
 Emp_2 = Employee_2.from_string('Romit-Kumar-38000')
 print('\nExample of class method as an alternative constructor:-\n','Salary of Emp_2: ',Emp_2.salary)
+
+# Static methods in class (when there is no use of class methods or instance methods)
+
+class Box:
+    length = '5m'
+
+    def __init__ (self,shape):
+        self.shape = shape
+
+    @staticmethod
+    def is_shipped_on(day):
+        if day == 'sun':
+            return False
+        else:
+            return True
+
+box_1 = Box('square')
+print("\nExample of static method in class:-\n",'Is Shipped on Sunday:',box_1.is_shipped_on('sun'))
