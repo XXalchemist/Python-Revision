@@ -346,3 +346,12 @@ bisect.bisect(list_of_number, value_to_be_inserted) # tells ehere to insert numb
 bisect.insort(list_of_number, value_to_be_inserted) # inserts the number
 
 ```
+
+### 16. Lambda function in Python
+
+**One Line function also known as anonymous function and generally used when we want to use function onlhy one time.**<br>
+
+_Syntax:-_
+```python
+variable_name = lambda parameters : statement
+```

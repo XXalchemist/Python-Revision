@@ -316,3 +316,8 @@ list_num = [1,2,3,4,8]
 print(bisect.bisect(list_num,5)) # tells where to insert number
 print(bisect.insort(list_num,5)) # insert number
 print('\nExample of Bisect: ',list_num)
+
+# Lambda Function
+
+add = lambda x,y: x+y
+print('\nExample of Lamda Function: ',add(5,10))
