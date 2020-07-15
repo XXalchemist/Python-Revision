@@ -182,3 +182,28 @@ Emp_3 = Programmer('Fullmetal','Alchemist',45000,'Python','0yrs')
 print('\nExample Of Inheritance:-\n','Emp_3 salary: ',Emp_3.salary)
 Emp_3.increase()
 print('\nNew salary: ',Emp_3.salary)
+
+
+# Magic / Dunder Method in Python -> Represented by '__methodName__' and is used for method overriding.
+
+class Employee_3:
+
+    def __init__(self, first, last, sal): # Constructor for class
+        self.fname = first   # instance variable
+        self.lname = last
+        self.salary = sal
+
+    # Magic method
+    def __add__(self,other): # Changing the functionality of addition
+        return self.salary + other.salary
+
+    def __repr__(self): # what to show when we print object
+        return 'Employee_3({}, {}, {})'.format(self.fname, self.lname, self.salary)
+    
+    # def __str__(self): #overwrites the repr method
+    #     return 'The name is {} {}'.format(self.fname,self.lname)
+
+Emp_4 = Employee_3('Dante','Kumar',40000)
+Emp_5 = Employee_3('Gordon','Freeman',1000000)
+
+print('\nExample of Dunder Methods:-\n','Emp_4 + Emp_5: ',Emp_4 + Emp_5,"--- repr(Emp_4): ",repr(Emp_4))
