@@ -124,3 +124,5 @@ def function_name(parameters):
 ```
 **Scope: Variables that is used in particular block of statements.**
 _if variable is not declared in function then it store the global value of that variable._
+
+### 7. Objects and Classes

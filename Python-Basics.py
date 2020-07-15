@@ -98,3 +98,30 @@ def add_1(y):
     print(x)
 x=2
 # z = add_1(x) //returns error
+
+# Objects and Classes
+
+class Employee:
+    increment = 1.5 # Class variable
+    number_of_employee = 0 
+    
+    def __init__(self, first, last, sal): # Constructor for class
+        self.fname = first   # instance variable
+        self.lname = last
+        self.salary = sal
+    
+    def increase(self):
+        self.salary = self.salary * self.increment
+    
+    @classmethod # a function that uses only class variable
+    def change_increment(cls, amount):
+        cls.increment = amount
+
+print('\nOOPS IN PYTHON\n')
+Emp_1 = Employee('Narayan','Krishna',40000)
+
+print('Name: ',Emp_1.fname+' '+Emp_1.lname,'\nSalary of Emp_1: ',Emp_1.salary,'')
+
+Employee.change_increment(2)
+Emp_1.increase()
+print('New salary after increment: ',Emp_1.salary)
