@@ -235,4 +235,41 @@ else:
     print("if except block doesn't execute")
 finally:
     print('This will always execute')
+
+```
+
+### 11. Virtual Enviroment
+
+**To use certain packages in certain project.**<br>
+
+>All commands here are for windows cmd/powershell.<br>
+
+_To install virtualenv :-_
+```s
+pip install virtualenv
+```
+_To create and activate virtual env :-_
+```s
+virtualenv virtualenv_name
+virtualenv_name/scripts/activate
+```
+_To deactivate virtual env :-_
+```s
+deactivate
+```
+_To create requirements.txt file to hold all required package name :-_
+```s
+pip freeze>requirements.txt
+```
+_To create virtual env which have preinstalled system packages :-_
+```s
+virtualenv --system-site-package virtualenv_name
+```
+_To delete virtual env :-_
+```s
+del virtualenv_name
+```
+_To install packages that are in requirements.txt :-_
+```s
+pip install -r requirements.txt
 ```
