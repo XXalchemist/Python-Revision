@@ -334,3 +334,15 @@ for item in gen:
 - **Filter:** return filter object, contains elements if the condition is true. We have to typecast the result._Syntax:_ *filter(function_name, list_of_inputs)*
 - **Join:** Join each elements in list with some symbol._Syntax:_ *'symbol'.join(list_of_inputs)*
   
+### 15. Bisect Module in Python
+
+**Doesn't sort so sorted list is required. It is used to insert number in the list such that the after insertion list remains sorted. Uses Binary Search.**<br>
+
+_Syntax:-_
+```python
+
+import bisect
+bisect.bisect(list_of_number, value_to_be_inserted) # tells ehere to insert number
+bisect.insort(list_of_number, value_to_be_inserted) # inserts the number
+
+```

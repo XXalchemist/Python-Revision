@@ -308,3 +308,11 @@ mul_list = reduce(mul_num, h1)
 
 list_of = [ 'chalk', 'pen', 'paper']
 print('\nExample of Join: ',' and '.join(list_of))
+
+# Bisect Module
+import bisect
+
+list_num = [1,2,3,4,8]
+print(bisect.bisect(list_num,5)) # tells where to insert number
+print(bisect.insort(list_num,5)) # insert number
+print('\nExample of Bisect: ',list_num)
