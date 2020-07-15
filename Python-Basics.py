@@ -321,3 +321,11 @@ print('\nExample of Bisect: ',list_num)
 
 add = lambda x,y: x+y
 print('\nExample of Lamda Function: ',add(5,10))
+
+# Enumerate in Python
+
+print('\nEnumerate in Python :-')
+rand_alpha = ['ab','cd','ed']
+
+for i,item in enumerate(rand_alpha):
+    print(i,' -> ',item)

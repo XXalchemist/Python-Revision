@@ -355,3 +355,14 @@ _Syntax:-_
 ```python
 variable_name = lambda parameters : statement
 ```
+
+### 17. Enumerate in Python
+
+**To convert to the number.**
+_Syntax :-_
+```Python
+list1 = [ 'a','b','c' ]
+for i,item in enumerate(list_1):
+    print(i,'->',item) 
+```
+
