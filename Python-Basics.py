@@ -242,3 +242,17 @@ except IOError as e:
     print('This is I/O Error')
 finally:
     print('This will always run')
+
+# Generators and iterators
+
+def gen(n):
+    for i in range(n):
+        yield i
+obj_1 = gen(10)
+print('\nGenerators Example :- \n',obj_1)
+print(next(obj_1))
+print(next(obj_1))
+
+print('\nFor Loop:-')
+for i in range(10):
+    print(i,end=',')

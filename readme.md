@@ -273,3 +273,28 @@ _To install packages that are in requirements.txt :-_
 ```s
 pip install -r requirements.txt
 ```
+
+### 12. Iterators, Iterables and Generators
+
+- Iterator : operator used for iteration.
+- Iterable : object that can be iterated.
+- Iteration: process of iterating elements.
+- Generator: takes time but doesn't consume much memory, very useful to create iterable object.
+  
+` iter() `is used to create iterable object.
+
+>Python code :-
+```python
+
+# Generator
+
+def gernerator_name(parameters):
+    for i in range(200):
+        yield i
+print(gen(1000))
+
+obj_1 = gen(1000)
+obj_1.next() # To yield next item of generator object
+
+
+```
