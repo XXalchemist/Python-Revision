@@ -179,6 +179,17 @@ __repr__: To cahnge representation of object. Example: repr(object_name)
 __str__: To overwrite repr() method. Example: str(object_name)
 
 
+```
+### 8. __name__ == '__main__'
+
+**It is best to use __name__ == '__main__' in python coding to run particular section of code from particular package and modules. __name__ is global variable**
+
+```python
 
 
+if __name__ == '__main__':
+    main()
+
+def main():
+    block of statements    
 ```
