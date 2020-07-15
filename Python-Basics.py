@@ -125,3 +125,26 @@ print('Name: ',Emp_1.fname+' '+Emp_1.lname,'\nSalary of Emp_1: ',Emp_1.salary,''
 Employee.change_increment(2)
 Emp_1.increase()
 print('New salary after increment: ',Emp_1.salary)
+
+# Class Method as an alternative Constructor
+
+class Employee_2:
+    increment = 1.5 # Class variable
+    number_of_employee = 0 
+    
+    def __init__(self, first, last, sal): # Constructor for class
+        self.fname = first   # instance variable
+        self.lname = last
+        self.salary = sal
+    
+    def increase(self):
+        self.salary = self.salary * self.increment
+
+    @classmethod
+    
+    def from_string(cls, emp_string):
+        fname, lname, salary = emp_string.split('-')
+        return cls(fname, lname, salary)
+
+Emp_2 = Employee_2.from_string('Romit-Kumar-38000')
+print('\nExample of class method as an alternative constructor:-\n','Salary of Emp_2: ',Emp_2.salary)
