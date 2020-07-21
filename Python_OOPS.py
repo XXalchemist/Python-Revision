@@ -20,3 +20,5 @@ class Library:
     def returnBook(self, book):
         pass
 
+if __name__ == '__main__' :
+    library = Library()
